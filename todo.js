@@ -10,10 +10,12 @@ let j=document.createElement('li');
 j.innerHTML=`<i class='fas fa-trash'  id = '${c}'></i> ${b.value}`;
 
 ul.appendChild(j);
+	b.value ="";
 
  let r = document.getElementById(c);
  r.addEventListener("click", (e)=>{
 	r.parentElement.remove();
+	
 
 
 });
